@@ -1,0 +1,14 @@
+language: node_js
+before_install: npm install -g mocha
+node_js:
+- '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJN7ZXY2IBJ63OOXA
+  secret_access_key:
+    secure: TtCvrLkq9XAqjdFgZIZWmJkFm93ww6P4Lfkte5rOlt2qzERtp0ltxh/J0grNZi+iwhdc72FRGzpWvLM5KkCn4Hnlak9EwA04H4yvDjUUcbivw5aTEVmmvFQ21n5+rkM0RUGZZM4G59Q2NpFgyrJ1UxPK+t8VPBaqSFJgBJH9aqs=
+  bucket: deploy-weeia
+  upload-dir: wozniakout
+  acl: public_read
+  on:
+    repo: piotrek92/ciWorker
