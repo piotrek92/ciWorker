@@ -60,7 +60,7 @@ var modify = function(){
 			//po zapisie na dysk
 			requestt.on('finish', function (){
 				console.log('jestem tu po zapisaniu pliku na dysk');
-//////////////////////////////////
+////////////////////////////////////
 
 Caman("tmp/"+messageinfo.key.substring(10), function () {
   this.brightness(5);
