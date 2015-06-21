@@ -14,8 +14,8 @@
     "ejs": "^1.0.0",
     "moment": "^2.5.1",
     "webs-weeia": "0.0.2",
-    "canvas": "*",
-    "fibers": "*"
-    
+   "cairo":"*",
+    "libjpeg":"*",
+    "libpng":"*",
   }
 }
