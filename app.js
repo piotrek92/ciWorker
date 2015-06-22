@@ -51,10 +51,10 @@ var AWS = require("aws-sdk");
                                 console.log('jestem tu po zapisaniu pliku na dysk'); ////////////////////////////////////
                 var zdj=new Jimp("tmp/"+messageinfo.key.substring(13), function (err, image) {
                 this.greyscale();
-                this.write("tmp/"+messageinfo.key.substring(13));
+                this.write("edytowany.jpg");
                 });
 
-                                        var fileStream = require('fs').createReadStream("tmp/"+messageinfo.key.substring(13));
+                                        var fileStream = require('fs').createReadStream("edytowany.jpg");
                                         fileStream.on('open', function () {
                                                 var paramsu = {
                                                         Bucket: messageinfo.bucket,
