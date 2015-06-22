@@ -84,5 +84,6 @@ var AWS = require("aws-sdk");
                                                 }
                         }
                 });
+                setTimeout(modify, 10000);
         }
 modify();
